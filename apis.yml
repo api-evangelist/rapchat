@@ -1,19 +1,49 @@
 aid: rapchat
 name: Rapchat
-description: Rapchat is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Rapchat is a mobile-first music creation platform for artists, rappers,
+  singers, and producers, founded in 2014. Creators use the Rapchat iOS and
+  Android apps to find professionally-produced beats from top producers, record
+  studio-quality vocals with effects and audio filters, write lyrics, join
+  music challenges, collaborate, and share finished songs with a creator
+  community. The platform reports 15M+ creators, 100M+ tracks, and over one
+  billion plays, and offers free web-based artist tools (rap name generator,
+  lyric generator, rhyme finder, BPM mood guide) alongside Free, Premium, and
+  Pro subscription tiers. Rapchat is a portfolio company of 500 Global. As of
+  this profile the company exposes no public developer API, SDK, or developer
+  portal; its /api endpoint is an internal application backend (HTTP 403).
 url: https://raw.githubusercontent.com/api-evangelist/rapchat/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.rapchat.me/images/logo-white-2048.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Music
+- Music Creation
+- Audio
+- Beats
+- Recording
+- Consumer App
+- Mobile App
+- Creator Tools
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +53,30 @@ maintainers:
 common:
 - type: Website
   url: https://rapchat.com
+- type: SignUp
+  url: https://rapchat.com/signup
+- type: Login
+  url: https://rapchat.com/login
+- type: Pricing
+  url: https://rapchat.com/pricing
+- type: Support
+  url: https://rapchat.com/support
+- type: Blog
+  url: https://rapchat.com/resources/blog
+- type: TermsOfService
+  url: https://rapchat.com/terms
+- type: PrivacyPolicy
+  url: https://rapchat.com/privacy
+- type: LLMsTxt
+  url: llms/rapchat-llms.txt
+- type: ContentSignal
+  url: well-known/rapchat-well-known.yml
+- type: WellKnown
+  url: well-known/rapchat-well-known.yml
+- type: DomainSecurity
+  url: security/rapchat-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

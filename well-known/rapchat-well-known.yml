@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: probed
+source: live probes of https://rapchat.com/.well-known/* and /robots.txt
+host: rapchat.com
+well_known:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+consent_signals:
+- source: /robots.txt
+  status: 200
+  type: ContentSignal
+  directive: search=yes,ai-input=yes,ai-train=no,use=reference
+  note: >-
+    robots.txt publishes a Cloudflare Content-Signal on User-agent:* — allows
+    search indexing and AI-input (retrieval/grounding) but forbids AI training
+    (ai-train=no). Named AI/search crawlers (GPTBot, ClaudeBot, Claude-SearchBot,
+    OAI-SearchBot, PerplexityBot, Google-Extended, CCBot) are explicitly Allowed.
