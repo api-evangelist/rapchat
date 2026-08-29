@@ -13,6 +13,17 @@ description: >-
   this profile the company exposes no public developer API, SDK, or developer
   portal; its /api endpoint is an internal application backend (HTTP 403).
 url: https://raw.githubusercontent.com/api-evangelist/rapchat/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
